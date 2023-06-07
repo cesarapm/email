@@ -31,21 +31,13 @@ router.post("/send-email", async (req, res) => {
 
   let info = await transporter.sendMail({
     from: "Nuevo Contacto", // sender address,
-    to: "contacto@webgeoapm.com",
+    to: "geoapm@hotmail.com",
     subject: "Website Contact Form",
     //text: "Hello World",
     html: contentHTML,
   });
 
-  // console.log("Message sent: %s", info.messageId);
-
-  // console.log("Preview URL: %s", nodemailer);
-
-  // console.log(info.accepted);
-
-  // console.log(req.body);
-
-  res.json(info.accepted);
+  res.json(info);
 });
 
 module.exports = router;
