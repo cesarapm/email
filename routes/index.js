@@ -17,8 +17,8 @@ router.post("/send-email", async (req, res) => {
         </br>
         </br>
         </br>
-        <p>https://api.whatsapp.com/send?phone=${phone}&text=Buen%20d%C3%ADa%2C%20me%20interesa%20saber%20m%C3%A1s%20informaci%C3%B3n%20para%20tu%20sitio%20Web</p>
-
+       
+        <a href="https://api.whatsapp.com/send?phone=${phone}&text=Buen%20d%C3%ADa%2C%20me%20interesa%20saber%20m%C3%A1s%20informaci%C3%B3n%20para%20tu%20sitio%20Web">Texto del enlace</a>
 
     `;
 
